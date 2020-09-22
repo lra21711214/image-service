@@ -30,7 +30,7 @@ def return_image(image_id):
 @app.route('/', methods=['post'])
 def upload():
     image = request.files['image']
-    if image and file_check(image, ALLOWED_EXTENSIONS):
+    if image and file_check(image.filename, ALLOWED_EXTENSIONS):
         _, ext = os.path.splitext(image.filename)
         image_id = str(uuid.uuid4())
         image_name = secure_filename(image_id + ext.lower())
