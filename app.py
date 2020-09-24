@@ -10,7 +10,7 @@ import mimetypes
 app = Flask(__name__)
 
 UPLOAD_FOLDER = './image'
-ALLOWED_EXTENSIONS = set(['png', 'jpg', 'gif', 'jpeg'])
+ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
