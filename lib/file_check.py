@@ -1,4 +1,3 @@
-import magic
 import mimetypes
 
 def file_check(filename, ALLOWED_EXTENSIONS):
